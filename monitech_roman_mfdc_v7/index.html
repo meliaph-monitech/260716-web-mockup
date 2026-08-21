@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MFDC Industries | MONITECH Mockup V6</title>
+<style>
+:root{--navy:#082e63;--blue:#164f93;--sky:#eef6fc;--roman:#c92332;--text:#292f37;--muted:#68727f;--line:#e5e8ec;--bg:#ffffff;--max:1400px}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:SUIT,"Noto Sans KR","Malgun Gothic",Arial,sans-serif;color:var(--text);background:var(--bg)}
+a{text-decoration:none;color:inherit} button{font:inherit}.wrap{width:min(var(--max),calc(100% - 60px));margin:0 auto}.fcc{display:flex;align-items:center;justify-content:center}
+.header-wrap{position:absolute;left:0;right:0;top:0;height:90px;z-index:20;border-bottom:1px solid rgba(255,255,255,.25);color:white}.header-inner{height:100%;display:flex;align-items:center;justify-content:space-between}.logo{font-size:28px;font-weight:900;letter-spacing:.03em;color:#fff}
+.main-menu{display:flex;gap:52px;height:100%;align-items:center}.menu-leader{height:100%;display:flex;align-items:center;position:relative;font-weight:700}.menu-leader>a{padding:34px 0}.second-menu{display:none;position:absolute;top:90px;left:50%;transform:translateX(-50%);width:255px;background:white;color:#333;padding:12px 0;box-shadow:0 10px 30px rgba(0,0,0,.16)}.menu-leader:hover .second-menu{display:block}.second-menu a{display:block;padding:14px 20px;font-weight:500;white-space:nowrap}.second-menu a:hover,.second-menu a.active{background:#f2f6fa;color:var(--navy);font-weight:800}.second-menu a.new:after{content:"NEW";display:inline-block;margin-left:8px;background:var(--roman);color:#fff;font-size:10px;padding:2px 5px;border-radius:2px;vertical-align:2px}
+.header-right{display:flex;align-items:center;gap:0;height:100%}.contact{height:100%;padding:0 25px;border-left:1px solid rgba(255,255,255,.22);border-right:1px solid rgba(255,255,255,.22);font-weight:700;cursor:pointer}.lang{height:100%;min-width:74px;gap:7px;cursor:pointer;font-weight:800;background:none;border:0;color:white}.menu-btn{font-size:26px;padding-left:22px}
+.sub-visual{height:500px;position:relative;overflow:hidden;background:linear-gradient(rgba(4,24,50,.68),rgba(4,24,50,.68)),url('assets/Industries_RW.jpg') center 46%/cover no-repeat}.sub-visual:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 0 58%,rgba(255,255,255,.05) 58% 59%,transparent 59%),repeating-linear-gradient(90deg,transparent 0 78px,rgba(255,255,255,.025) 79px 80px)}.sub-title{position:absolute;left:0;right:0;top:168px;color:white;text-align:center}.sub-title h1{font-size:42px;margin:0;font-weight:800;letter-spacing:-.04em}.sub-title p{margin:16px 0 0;color:rgba(255,255,255,.78);font-size:17px}.sub-tabs{position:absolute;bottom:0;left:0;right:0;height:78px;background:rgba(7,37,78,.88)}.tab-list{height:100%;display:grid;grid-template-columns:repeat(5,1fr)}.tab-list a{color:white;border-right:1px solid rgba(255,255,255,.18);font-size:16px;font-weight:600;text-align:center;display:flex;align-items:center;justify-content:center;padding:0 12px}.tab-list a:first-child{border-left:1px solid rgba(255,255,255,.18)}.tab-list a.active{background:#fff;color:var(--navy);font-weight:900;position:relative}.tab-list a.active:before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--roman)}.tab-list .new-label{font-size:10px;background:var(--roman);color:#fff;border-radius:2px;padding:2px 5px;margin-left:7px}
+.content{padding:100px 0 120px}.page-title{text-align:center;font-size:38px;margin:0 0 26px;font-weight:800;letter-spacing:-.04em}.page-title:after{content:"";display:block;width:46px;height:3px;background:var(--navy);margin:22px auto 0}.page-sub{text-align:center;color:var(--muted);margin:0 auto 55px;max-width:980px;line-height:1.8}
+.intro-strip{border:1px solid var(--line);background:#f8fafc;padding:28px 34px;margin-bottom:42px;display:flex;align-items:center;justify-content:space-between;gap:30px}.intro-strip .copy{max-width:910px}.intro-strip h2{font-size:25px;margin:0 0 10px;color:var(--navy)}.intro-strip p{margin:0;color:var(--muted);line-height:1.75}.partner-badge{min-width:230px;text-align:center;border-left:1px solid var(--line);padding-left:28px}.partner-badge small{display:block;color:#7b838d;margin-bottom:8px}.partner-badge strong{font-size:22px;color:var(--roman);font-style:italic}.roman-badge-img{width:86px;height:auto;margin:0 auto 10px;display:block}
+.family-head{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:18px;border-bottom:2px solid var(--navy);margin-top:12px}.family-head h2{margin:0 0 8px;font-size:30px;color:var(--navy)}.family-head p{margin:0;color:var(--muted)}
+.product-row{display:flex;justify-content:space-between;gap:40px;padding:34px 0;border-bottom:1px solid var(--line);min-height:290px}.product-left{display:flex;gap:34px;align-items:center;min-width:0}.product-img{width:300px;min-width:300px;flex:0 0 300px;height:220px;background:#f4f6f8;border:1px solid #e2e6eb;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.product-img:before{content:"";position:absolute;inset:auto 22px 18px;height:12px;background:rgba(0,0,0,.05);filter:blur(8px);border-radius:50%}.product-img>img{width:100%;height:100%;object-fit:cover;object-position:center;object-position:center;position:relative;z-index:1}.product-info{min-width:380px;max-width:760px}.brand-tag{display:inline-block;padding:6px 13px;color:#fff;background:var(--roman);font-size:12px;font-weight:800;margin-bottom:16px}.product-info h3{font-size:28px;margin:0 0 16px;letter-spacing:-.03em;color:#1e2f48}.industry-text{margin-top:8px}.industry-text p{margin:0 0 13px;color:var(--muted);line-height:1.78;font-size:16px}.industry-text p:last-child{margin-bottom:0}
+.product-right{min-width:260px;display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between}.icon-stack{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}.chip{display:inline-flex;align-items:center;height:36px;padding:0 12px;border:1px solid #dfe3e8;color:#48525d;background:#fff;font-size:13px;font-weight:700}.detail-btn{min-width:230px;height:58px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;transition:.2s}.detail-btn:hover{background:var(--roman)}.detail-btn span:last-child{margin-left:20px;font-size:19px}
+.note-box{background:#f8fafc;border:1px solid var(--line);padding:26px 30px;margin-top:42px}.note-box strong{color:var(--navy)}.contact-box{background:var(--navy);color:white;padding:46px 55px;display:flex;justify-content:space-between;align-items:center;margin-top:40px}.contact-box h2{margin:0 0 10px;font-size:27px}.contact-box p{margin:0;color:rgba(255,255,255,.72)}.contact-box a{background:white;color:var(--navy);padding:15px 28px;font-weight:900}
+footer{background:#202831;color:#aeb7c2;padding:50px 0;font-size:14px}.footer-inner{display:flex;justify-content:space-between;gap:30px}.footer-logo{font-size:24px;color:#fff;font-weight:900;margin-bottom:12px}.footer-right{text-align:right;line-height:1.8}.prototype-note{position:fixed;right:18px;bottom:18px;background:white;box-shadow:0 8px 25px rgba(0,0,0,.18);padding:10px 13px;font-size:11px;z-index:30;color:#525b66}.prototype-note b{color:var(--roman)}
+[data-en]{display:none} body.en [data-ko]{display:none !important} body.en [data-en]{display:initial !important} body.en div[data-en],body.en p[data-en],body.en h1[data-en],body.en h2[data-en],body.en h3[data-en],body.en span[data-en],body.en strong[data-en]{display:block !important} body.en a[data-en]{display:flex !important}
+@media(max-width:1180px){.main-menu{display:none}.wrap{width:min(var(--max),calc(100% - 36px))}.tab-list{overflow-x:auto;display:flex}.tab-list a{min-width:210px;height:78px}.product-row{flex-direction:column}.product-right{width:100%;flex-direction:row;align-items:center}}
+@media(max-width:760px){.header-wrap{height:72px}.logo{font-size:22px}.contact{display:none}.sub-visual{height:410px}.sub-title{top:142px}.sub-title h1{font-size:34px}.sub-tabs{height:70px}.tab-list a{height:70px;min-width:190px;font-size:14px}.content{padding:70px 0}.page-title{font-size:31px}.intro-strip{display:block}.partner-badge{border-left:0;border-top:1px solid var(--line);padding:20px 0 0;margin-top:20px}.family-head{display:block}.product-left{display:block}.product-img{width:100%;min-width:0;flex:0 0 auto;height:230px;margin-bottom:22px}.product-info{min-width:0}.product-right{display:block}.icon-stack{margin:18px 0;justify-content:flex-start}.detail-btn{width:100%}.contact-box{display:block;padding:35px 28px}.contact-box a{display:inline-block;margin-top:22px}.footer-inner{display:block}.footer-right{text-align:left;margin-top:25px}.prototype-note{display:none}}
+</style>
+</head>
+<body>
+<header class="header-wrap">
+  <div class="wrap header-inner">
+    <a class="logo" href="#">MONITECH</a>
+    <nav class="main-menu">
+      <div class="menu-leader"><a href="#"><span data-ko>사업영역</span><span data-en>BUSINESS</span></a></div>
+      <div class="menu-leader">
+        <a href="#"><span data-ko>제품소개</span><span data-en>PRODUCT</span></a>
+        <div class="second-menu">
+          <a href="#"><span data-ko>용접모니터링 시스템</span><span data-en>Welding Monitoring System</span></a>
+          <a href="#"><span data-ko>검사 장비 및 시스템</span><span data-en>Inspection Equipment & Systems</span></a>
+          <a href="#"><span data-ko>ARC 및 열화상 카메라</span><span data-en>ARC & Thermal Cameras</span></a>
+          <a href="#"><span data-ko>용접부 잔류 응력 제거 장비</span><span data-en>Residual Stress Relief Equipment</span></a>
+          <a href="#" class="active new"><span data-ko>MFDC 변압기</span><span data-en>MFDC Transformers</span></a>
+        </div>
+      </div>
+      <div class="menu-leader"><a href="#"><span data-ko>회사소개</span><span data-en>COMPANY</span></a></div>
+      <div class="menu-leader"><a href="#"><span data-ko>홍보센터</span><span data-en>PR CENTER</span></a></div>
+    </nav>
+    <div class="header-right">
+      <a class="contact fcc" href="#contact">Contact us</a>
+      <button class="lang fcc" id="langBtn">◎ <span id="langText">EN</span></button>
+      <div class="menu-btn">☰</div>
+    </div>
+  </div>
+</header>
+<section class="sub-visual">
+  <div class="sub-title">
+    <h1 data-ko>RoMan Manufacturing Transformer</h1><h1 data-en>RoMan Manufacturing Transformer</h1>
+    <p data-ko>세계가 인정한 프리미엄 변압기 – 저항용접 및 고온 가열 공정의 새로운 표준<br>세계 최고 수준의 고효율·고내구성 기술력, 이제 공식 대리점 모니텍을 통해 만나보십시오</p>
+    <p data-en>Globally recognized premium transformers – a new standard for resistance welding and high-temperature heating processes.<br>Discover world-class high-efficiency, high-durability technology through MONITECH, the official distributor.</p>
+  </div>
+  <div class="sub-tabs">
+    <div class="wrap tab-list">
+      <a href="#"><span data-ko>용접모니터링 시스템</span><span data-en>Welding Monitoring System</span></a>
+      <a href="#"><span data-ko>검사 장비 및 시스템</span><span data-en>Inspection Equipment & Systems</span></a>
+      <a href="#"><span data-ko>ARC 및 열화상 카메라</span><span data-en>ARC & Thermal Cameras</span></a>
+      <a href="#"><span data-ko>용접부 잔류 응력 제거 장비</span><span data-en>Residual Stress Relief Equipment</span></a>
+      <a class="active" href="#"><span data-ko>MFDC 변압기</span><span data-en>MFDC Transformers</span><em class="new-label">NEW</em></a>
+    </div>
+  </div>
+</section>
+<main class="content">
+  <div class="wrap">
+    <h1 class="page-title" data-ko>산업별 RoMan 변압기 적용 분야</h1><h1 class="page-title" data-en>RoMan Transformer Applications by Industry</h1>
+    <p class="page-sub" data-ko><strong>저항용접부터 반도체 크리스탈 성장까지 – 산업별 공정에 최적화된 맞춤형 솔루션</strong><br>자동차, 반도체, 유리, 열처리 등 각 산업 현장의 가혹한 환경에서도 흔들림 없는 전력 품질과 정밀한 열 제어를 제공</p>
+    <p class="page-sub" data-en><strong>Customized solutions optimized for each industrial process—from resistance welding to semiconductor crystal growth.</strong><br>They deliver stable power quality and precise thermal control even in the harsh operating environments of automotive, semiconductor, glass, and heat-treatment industries.</p>
+
+    <section class="intro-strip">
+      <div class="copy">
+        <h2 data-ko>왜 글로벌 기업들은 RoMan 변압기를 선택하는가?</h2>
+        <h2 data-en>Why do global companies choose RoMan transformers?</h2>
+        <p data-ko>- 독보적인 에너지 효율 &amp; 역률(Power Factor) 극대화 (최대 ROI 제공)<br>
+        - 초경량·컴팩트한 수랭식(Water-Cooled) 설계로 공간 활용 혁신<br>
+        - 열원 직결(Close-Coupled) 구조로 전력 손실 방지<br>
+        - 정밀한 DC 전력 공급으로 완벽한 품질 제어<br>
+        - 한국 공식 대리점 모니텍의 원스톱(One-Stop) 기술 지원</p>
+        <p data-en>- Outstanding energy efficiency and maximized power factor for the best ROI<br>
+        - Ultra-light, compact water-cooled design for better space utilization<br>
+        - Close-coupled structure that helps prevent power loss<br>
+        - Precise DC power delivery for superior quality control<br>
+        - One-stop technical support from MONITECH, the official distributor in Korea</p>
+      </div>
+      <div class="partner-badge"><img class="roman-badge-img" src="assets/Badge250.png" alt="RoMan badge"><small data-ko>연결 대상 제조사</small><small data-en>Linked manufacturer pages</small><strong style="display:block;">RoMan Manufacturing</strong></div>
+    </section>
+
+    <section class="family-head">
+      <div>
+        <h2 data-ko>산업 카테고리</h2><h2 data-en>Industry Categories</h2>
+        <p data-ko>각 항목의 자세히 보기 버튼은 제조사 원문 산업 페이지로 연결됩니다.</p>
+        <p data-en>The view-detail button for each entry links to the original manufacturer industry page.</p>
+      </div>
+    </section>
+
+    <article class="product-row">
+      <div class="product-left">
+        <div class="product-img"><img src="assets/Industries_RW.jpg" alt="Resistance Welding"></div>
+        <div class="product-info">
+          <div class="brand-tag">RoMan Manufacturing</div>
+          <h3 data-ko>저항용접</h3><h3 data-en>Resistance Welding</h3>
+          <div class="industry-text">
+            <p data-ko>저항용접 분야에서는 안정적인 고전류 공급과 정밀한 전류 제어가 핵심입니다. MFDC, AC, DC/Low-Frequency 계열의 전원 및 변압기 솔루션은 소형 스폿용접부터 대형 프로젝션 용접까지 다양한 공정 요구에 대응할 수 있습니다.</p>
+            <p data-en>Resistance welding applications require stable high-current delivery and precise current control. Power-supply and transformer solutions in MFDC, AC, and DC/low-frequency configurations can support a wide range of processes, from small spot welds to larger projection-welding applications.</p>
+            <p data-ko>용접 제어기, 건, 로봇 시스템 및 자동화 설비와의 연계가 중요하며, 자동차 및 일반 산업용 생산 라인 모두에서 활용될 수 있습니다.</p>
+            <p data-en>Integration with welding controls, weld guns, robotic systems, and automated equipment is important, making this category relevant to both automotive and general industrial production lines.</p>
+          </div>
+        </div>
+      </div>
+      <div class="product-right">
+        <div class="icon-stack"><span class="chip" data-ko>저항용접</span><span class="chip" data-en>Resistance Welding</span><span class="chip" data-ko>로봇용접</span><span class="chip" data-en>Robotic Systems</span><span class="chip" data-ko>자동차</span><span class="chip" data-en>Automotive</span></div>
+        <a class="detail-btn" href="https://www.romanmfg.com/industries/resistance-welding/" target="_blank" rel="noopener"><span data-ko>제품 자세히 보기</span><span data-en>View Product Details</span><span>›</span></a>
+      </div>
+    </article>
+
+    <article class="product-row">
+      <div class="product-left">
+        <div class="product-img"><img src="assets/industries_glass.jpg" alt="Glass"></div>
+        <div class="product-info">
+          <div class="brand-tag">RoMan Manufacturing</div>
+          <h3 data-ko>유리 제조</h3><h3 data-en>Glass Manufacturing</h3>
+          <div class="industry-text">
+            <p data-ko>유리 제조 공정에서는 용해, 부스팅, 성형 단계에서 안정적인 전력 공급과 열 제어가 중요합니다. 수냉식 변압기와 관련 전력 솔루션은 다양한 유형의 유리 공정에 적용될 수 있도록 설계될 수 있습니다.</p>
+            <p data-en>Glass-manufacturing processes require stable power delivery and thermal control across melting, boosting, and forming stages. Water-cooled transformers and related power solutions can be configured for a wide range of glass-production applications.</p>
+            <p data-ko>열원과 가까운 소형 구성은 에너지 효율 향상에 도움이 되며, 전압·주파수 조건과 제어 시스템 요구에 맞춘 구성이 가능합니다.</p>
+            <p data-en>Compact configurations installed close to the heat source can improve energy efficiency, while system design can be adapted to different voltage, frequency, and control requirements.</p>
+          </div>
+        </div>
+      </div>
+      <div class="product-right">
+        <div class="icon-stack"><span class="chip" data-ko>유리</span><span class="chip" data-en>Glass</span><span class="chip" data-ko>성형·용해</span><span class="chip" data-en>Forming & Melting</span><span class="chip" data-ko>에너지 효율</span><span class="chip" data-en>Energy Efficiency</span></div>
+        <a class="detail-btn" href="https://www.romanmfg.com/industries/glass/" target="_blank" rel="noopener"><span data-ko>제품 자세히 보기</span><span data-en>View Product Details</span><span>›</span></a>
+      </div>
+    </article>
+
+    <article class="product-row">
+      <div class="product-left">
+        <div class="product-img"><img src="assets/industries_furnace-new.jpg" alt="Furnace"></div>
+        <div class="product-info">
+          <div class="brand-tag">RoMan Manufacturing</div>
+          <h3 data-ko>브레이징 · 산업용 열처리로</h3><h3 data-en>Brazing & Industrial Heat-Treatment Furnaces</h3>
+          <div class="industry-text">
+            <p data-ko>브레이징 및 퍼니스 공정에서는 정밀한 온도 제어, 안정적인 전력 공급, 그리고 유지보수 편의성이 중요합니다. 단상, Scott-T, 3상 변압기와 SCR 또는 IGBT 기반 제어 시스템은 다양한 열처리 및 가열 공정 구성에 대응할 수 있습니다.</p>
+            <p data-en>Brazing and furnace applications depend on precise temperature control, stable power delivery, and easy maintenance access. Single-phase, Scott-T, and three-phase transformers, together with SCR or IGBT-based control systems, can support a wide variety of heating and heat-treatment configurations.</p>
+            <p data-ko>컴팩트한 설계와 진단 기능, 유지보수 접근성은 기존 설비의 현대화나 운영 안정성 향상에 도움이 될 수 있습니다.</p>
+            <p data-en>Compact design, diagnostic capability, and improved service accessibility can support system modernization and more reliable operation over time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="product-right">
+        <div class="icon-stack"><span class="chip" data-ko>산업용 열처리로</span><span class="chip" data-en>Industrial Furnace</span><span class="chip" data-ko>브레이징</span><span class="chip" data-en>Brazing</span><span class="chip" data-ko>열처리</span><span class="chip" data-en>Heat Treatment</span></div>
+        <a class="detail-btn" href="https://www.romanmfg.com/industries/furnace/" target="_blank" rel="noopener"><span data-ko>제품 자세히 보기</span><span data-en>View Product Details</span><span>›</span></a>
+      </div>
+    </article>
+
+    <article class="product-row">
+      <div class="product-left">
+        <div class="product-img"><img src="assets/Semi-Conductor-hero.jpg" alt="Semiconductor"></div>
+        <div class="product-info">
+          <div class="brand-tag">RoMan Manufacturing</div>
+          <h3 data-ko>반도체 결정 성장</h3><h3 data-en>Semiconductor Crystal Growth</h3>
+          <div class="industry-text">
+            <p data-ko>반도체 결정 성장 공정은 장시간 안정적으로 유지되는 고전류 저항 가열과 정밀한 온도 제어를 필요로 합니다. 전원장치, 변압기, 전력 분배 패널 및 제어 시스템은 고온·고전류 환경에 맞춰 구성될 수 있습니다.</p>
+            <p data-en>Semiconductor crystal-growth processes require stable high-current resistance heating and precise thermal control over long operating periods. Power supplies, transformers, distribution panels, and control systems can be configured for demanding high-temperature, high-current environments.</p>
+            <p data-ko>에너지 효율 최적화와 반복 가능한 공정 조건 확보는 고급 반도체 제조에서 중요한 요소입니다.</p>
+            <p data-en>Energy optimization and repeatable process conditions are important factors in advanced semiconductor manufacturing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="product-right">
+        <div class="icon-stack"><span class="chip" data-ko>반도체</span><span class="chip" data-en>Semiconductor</span><span class="chip" data-ko>결정 성장</span><span class="chip" data-en>Crystal Growth</span><span class="chip" data-ko>고전류</span><span class="chip" data-en>High Current</span></div>
+        <a class="detail-btn" href="https://www.romanmfg.com/industries/semi-conductor/" target="_blank" rel="noopener"><span data-ko>제품 자세히 보기</span><span data-en>View Product Details</span><span>›</span></a>
+      </div>
+    </article>
+
+    <section id="contact" class="contact-box">
+      <div>
+        <p data-ko>저희 MONITECH은 국내 전담 기술 엔지니어를 통한 신속한 컨설팅, 셋업, A/S 및 기술 교육 서비스를 보장</p><p data-en>MONITECH guarantees fast consulting, setup, after-sales service, and technical training through dedicated local technical engineers in Korea.</p>
+      </div>
+      <a href="#"><span data-ko>문의하기</span><span data-en>Contact Us</span></a>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <div class="footer-logo">MONITECH</div>
+      <div data-ko>본 파일은 내부 검토용 웹사이트 시안입니다.</div>
+      <div data-en>This file is a website mockup for internal review.</div>
+    </div>
+    <div class="footer-right">
+      <div>MONITECH Co., Ltd.</div>
+      <div data-ko>RoMan Manufacturing 산업 카테고리 시안 V7</div>
+      <div data-en>RoMan Manufacturing industry-category mockup V7</div>
+    </div>
+  </div>
+</footer>
+<div class="prototype-note"><b>V7 MOCKUP</b><br><span data-ko>멜리아 2026.08.20</span><span data-en>Shows only four industry entries</span></div>
+<script>
+const btn=document.getElementById('langBtn');
+const txt=document.getElementById('langText');
+btn.addEventListener('click',()=>{document.body.classList.toggle('en'); txt.textContent=document.body.classList.contains('en')?'KR':'EN'; document.documentElement.lang=document.body.classList.contains('en')?'en':'ko';});
+</script>
+</body>
+</html>
